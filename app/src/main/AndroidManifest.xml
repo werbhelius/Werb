@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wanbo.werb">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".MyApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--SplashActivity-->
+        <activity android:name=".ui.activity.SplashActivity"
+            android:theme="@style/FullWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--LoginActivity-->
+        <activity android:name=".ui.activity.LoginActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--MainActivity-->
+        <activity android:name=".ui.activity.MainActivity"
+            android:theme="@style/MainTheme"/>
+
+        <!--UserActivity-->
+        <activity android:name=".ui.activity.UserActivity"
+            android:theme="@style/UserActivityTheme"/>
+
+        <!--ShowPic-->
+        <activity android:name=".ui.activity.PicActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--UrlActivity-->
+        <activity android:name=".ui.activity.UrlActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--WeiBoDetail-->
+        <activity android:name=".ui.activity.WeiBoDetailActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--comment and repost-->
+        <activity android:name=".ui.activity.CommentAndRepostActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--send WeiBo-->
+        <activity android:name=".ui.activity.SendWeiBoActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--MessageActivity-->
+        <activity android:name=".ui.activity.MessageActivity"
+            android:theme="@style/FullWindowTheme"/>
+
+        <!--Browser by OAuth-->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+
+        <!--Pick photo-->
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wanbo.werb.widget.splash.SplashView
+        android:id="@+id/splash_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:splashIcon="@mipmap/ic_github"
+        app:iconColor="@color/splashBgColor"
+        app:duration="500"
+        app:holeFillColor="@color/splashBgColor"
+        app:removeFromParentOnEnd="true"/>
+</FrameLayout>

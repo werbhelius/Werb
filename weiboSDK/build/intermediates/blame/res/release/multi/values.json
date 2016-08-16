@@ -1,0 +1,357 @@
+[
+    {
+        "outputFile": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 1,
+                        "startOffset": 1401,
+                        "endColumn": 54,
+                        "endOffset": 1454
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 73,
+                    "endOffset": 182
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1460,
+                        "endColumn": 73,
+                        "endOffset": 1529
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 187,
+                    "endColumn": 57,
+                    "endOffset": 240
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 939,
+                        "endColumn": 57,
+                        "endOffset": 992
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 245,
+                    "endColumn": 55,
+                    "endOffset": 296
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 997,
+                        "endColumn": 55,
+                        "endOffset": 1048
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 301,
+                    "endColumn": 85,
+                    "endOffset": 382
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1966,
+                        "endColumn": 85,
+                        "endOffset": 2047
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 387,
+                    "endColumn": 68,
+                    "endOffset": 451
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 2,
+                        "startOffset": 1604,
+                        "endColumn": 66,
+                        "endOffset": 1668
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 456,
+                    "endColumn": 73,
+                    "endOffset": 525
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 1892,
+                        "endColumn": 73,
+                        "endOffset": 1961
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 530,
+                    "endColumn": 73,
+                    "endOffset": 599
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 1673,
+                        "endColumn": 73,
+                        "endOffset": 1742
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 604,
+                    "endColumn": 73,
+                    "endOffset": 673
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 1747,
+                        "endColumn": 73,
+                        "endOffset": 1816
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 678,
+                    "endColumn": 70,
+                    "endOffset": 744
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 1821,
+                        "endColumn": 70,
+                        "endOffset": 1887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 749,
+                    "endColumn": 71,
+                    "endOffset": 816
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1534,
+                        "endColumn": 71,
+                        "endOffset": 1601
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 821,
+                    "endColumn": 55,
+                    "endOffset": 872
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 768,
+                        "endColumn": 55,
+                        "endOffset": 819
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 877,
+                    "endColumn": 77,
+                    "endOffset": 950
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endColumn": 77,
+                        "endOffset": 763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 955,
+                    "endColumn": 56,
+                    "endOffset": 1007
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 824,
+                        "endColumn": 56,
+                        "endOffset": 876
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1012,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1298
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 919,
+                        "endLine": 29,
+                        "endColumn": 12,
+                        "endOffset": 1205
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1303,
+                    "endLine": 25,
+                    "endColumn": 12,
+                    "endOffset": 1458
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1243,
+                        "endLine": 34,
+                        "endColumn": 12,
+                        "endOffset": 1398
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1463,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 2755
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2058,
+                        "endLine": 62,
+                        "endColumn": 12,
+                        "endOffset": 3350
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2760,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 4012
+                },
+                "from": {
+                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 3360,
+                        "endLine": 79,
+                        "endColumn": 12,
+                        "endOffset": 4612
+                    }
+                }
+            }
+        ]
+    }
+]

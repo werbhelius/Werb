@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/pop_like"
+        android:icon="@drawable/weibo_home_dialog_like"
+        android:title="点赞"/>
+
+    <item
+        android:id="@+id/pop_repost"
+        android:icon="@drawable/timeline_icon_repost"
+        android:title="转发"/>
+    <item
+        android:id="@+id/pop_reply"
+        android:icon="@drawable/timeline_icon_comment"
+        android:title="回复"/>
+
+</menu>

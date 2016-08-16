@@ -1,0 +1,267 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* doc\
+* doc\allclasses-frame.html
+* doc\allclasses-noframe.html
+* doc\com\
+* doc\com\sina\
+* doc\com\sina\weibo\
+* doc\com\sina\weibo\sdk\
+* doc\com\sina\weibo\sdk\api\
+* doc\com\sina\weibo\sdk\api\BaseMediaObject.html
+* doc\com\sina\weibo\sdk\api\CmdObject.html
+* doc\com\sina\weibo\sdk\api\ImageObject.html
+* doc\com\sina\weibo\sdk\api\MusicObject.html
+* doc\com\sina\weibo\sdk\api\TextObject.html
+* doc\com\sina\weibo\sdk\api\VideoObject.html
+* doc\com\sina\weibo\sdk\api\VoiceObject.html
+* doc\com\sina\weibo\sdk\api\WebpageObject.html
+* doc\com\sina\weibo\sdk\api\WeiboMessage.html
+* doc\com\sina\weibo\sdk\api\WeiboMultiMessage.html
+* doc\com\sina\weibo\sdk\api\class-use\
+* doc\com\sina\weibo\sdk\api\class-use\BaseMediaObject.html
+* doc\com\sina\weibo\sdk\api\class-use\CmdObject.html
+* doc\com\sina\weibo\sdk\api\class-use\ImageObject.html
+* doc\com\sina\weibo\sdk\api\class-use\MusicObject.html
+* doc\com\sina\weibo\sdk\api\class-use\TextObject.html
+* doc\com\sina\weibo\sdk\api\class-use\VideoObject.html
+* doc\com\sina\weibo\sdk\api\class-use\VoiceObject.html
+* doc\com\sina\weibo\sdk\api\class-use\WebpageObject.html
+* doc\com\sina\weibo\sdk\api\class-use\WeiboMessage.html
+* doc\com\sina\weibo\sdk\api\class-use\WeiboMultiMessage.html
+* doc\com\sina\weibo\sdk\api\package-frame.html
+* doc\com\sina\weibo\sdk\api\package-summary.html
+* doc\com\sina\weibo\sdk\api\package-tree.html
+* doc\com\sina\weibo\sdk\api\package-use.html
+* doc\com\sina\weibo\sdk\api\share\
+* doc\com\sina\weibo\sdk\api\share\IWeiboShareAPI.html
+* doc\com\sina\weibo\sdk\api\share\WeiboShareSDK.html
+* doc\com\sina\weibo\sdk\api\share\class-use\
+* doc\com\sina\weibo\sdk\api\share\class-use\IWeiboShareAPI.html
+* doc\com\sina\weibo\sdk\api\share\class-use\WeiboShareSDK.html
+* doc\com\sina\weibo\sdk\api\share\package-frame.html
+* doc\com\sina\weibo\sdk\api\share\package-summary.html
+* doc\com\sina\weibo\sdk\api\share\package-tree.html
+* doc\com\sina\weibo\sdk\api\share\package-use.html
+* doc\com\sina\weibo\sdk\auth\
+* doc\com\sina\weibo\sdk\auth\AuthInfo.html
+* doc\com\sina\weibo\sdk\auth\Oauth2AccessToken.html
+* doc\com\sina\weibo\sdk\auth\WeiboAuthListener.html
+* doc\com\sina\weibo\sdk\auth\class-use\
+* doc\com\sina\weibo\sdk\auth\class-use\AuthInfo.html
+* doc\com\sina\weibo\sdk\auth\class-use\Oauth2AccessToken.html
+* doc\com\sina\weibo\sdk\auth\class-use\WeiboAuthListener.html
+* doc\com\sina\weibo\sdk\auth\package-frame.html
+* doc\com\sina\weibo\sdk\auth\package-summary.html
+* doc\com\sina\weibo\sdk\auth\package-tree.html
+* doc\com\sina\weibo\sdk\auth\package-use.html
+* doc\com\sina\weibo\sdk\auth\sso\
+* doc\com\sina\weibo\sdk\auth\sso\SsoHandler.html
+* doc\com\sina\weibo\sdk\auth\sso\class-use\
+* doc\com\sina\weibo\sdk\auth\sso\class-use\SsoHandler.html
+* doc\com\sina\weibo\sdk\auth\sso\package-frame.html
+* doc\com\sina\weibo\sdk\auth\sso\package-summary.html
+* doc\com\sina\weibo\sdk\auth\sso\package-tree.html
+* doc\com\sina\weibo\sdk\auth\sso\package-use.html
+* doc\com\sina\weibo\sdk\component\
+* doc\com\sina\weibo\sdk\component\view\
+* doc\com\sina\weibo\sdk\component\view\AttentionComponentView.RequestParam.html
+* doc\com\sina\weibo\sdk\component\view\AttentionComponentView.html
+* doc\com\sina\weibo\sdk\component\view\CommentComponentView.Category.html
+* doc\com\sina\weibo\sdk\component\view\CommentComponentView.RequestParam.html
+* doc\com\sina\weibo\sdk\component\view\CommentComponentView.html
+* doc\com\sina\weibo\sdk\component\view\class-use\
+* doc\com\sina\weibo\sdk\component\view\class-use\AttentionComponentView.RequestParam.html
+* doc\com\sina\weibo\sdk\component\view\class-use\AttentionComponentView.html
+* doc\com\sina\weibo\sdk\component\view\class-use\CommentComponentView.Category.html
+* doc\com\sina\weibo\sdk\component\view\class-use\CommentComponentView.RequestParam.html
+* doc\com\sina\weibo\sdk\component\view\class-use\CommentComponentView.html
+* doc\com\sina\weibo\sdk\component\view\package-frame.html
+* doc\com\sina\weibo\sdk\component\view\package-summary.html
+* doc\com\sina\weibo\sdk\component\view\package-tree.html
+* doc\com\sina\weibo\sdk\component\view\package-use.html
+* doc\com\sina\weibo\sdk\constant\
+* doc\com\sina\weibo\sdk\constant\WBAuthErrorCode.html
+* doc\com\sina\weibo\sdk\constant\class-use\
+* doc\com\sina\weibo\sdk\constant\class-use\WBAuthErrorCode.html
+* doc\com\sina\weibo\sdk\constant\package-frame.html
+* doc\com\sina\weibo\sdk\constant\package-summary.html
+* doc\com\sina\weibo\sdk\constant\package-tree.html
+* doc\com\sina\weibo\sdk\constant\package-use.html
+* doc\com\sina\weibo\sdk\exception\
+* doc\com\sina\weibo\sdk\exception\WeiboAuthException.html
+* doc\com\sina\weibo\sdk\exception\WeiboDialogException.html
+* doc\com\sina\weibo\sdk\exception\WeiboException.html
+* doc\com\sina\weibo\sdk\exception\WeiboHttpException.html
+* doc\com\sina\weibo\sdk\exception\WeiboShareException.html
+* doc\com\sina\weibo\sdk\exception\class-use\
+* doc\com\sina\weibo\sdk\exception\class-use\WeiboAuthException.html
+* doc\com\sina\weibo\sdk\exception\class-use\WeiboDialogException.html
+* doc\com\sina\weibo\sdk\exception\class-use\WeiboException.html
+* doc\com\sina\weibo\sdk\exception\class-use\WeiboHttpException.html
+* doc\com\sina\weibo\sdk\exception\class-use\WeiboShareException.html
+* doc\com\sina\weibo\sdk\exception\package-frame.html
+* doc\com\sina\weibo\sdk\exception\package-summary.html
+* doc\com\sina\weibo\sdk\exception\package-tree.html
+* doc\com\sina\weibo\sdk\exception\package-use.html
+* doc\com\sina\weibo\sdk\net\
+* doc\com\sina\weibo\sdk\net\AsyncWeiboRunner.html
+* doc\com\sina\weibo\sdk\net\class-use\
+* doc\com\sina\weibo\sdk\net\class-use\AsyncWeiboRunner.html
+* doc\com\sina\weibo\sdk\net\openapi\
+* doc\com\sina\weibo\sdk\net\openapi\RefreshTokenApi.html
+* doc\com\sina\weibo\sdk\net\openapi\ShareWeiboApi.html
+* doc\com\sina\weibo\sdk\net\openapi\class-use\
+* doc\com\sina\weibo\sdk\net\openapi\class-use\RefreshTokenApi.html
+* doc\com\sina\weibo\sdk\net\openapi\class-use\ShareWeiboApi.html
+* doc\com\sina\weibo\sdk\net\openapi\package-frame.html
+* doc\com\sina\weibo\sdk\net\openapi\package-summary.html
+* doc\com\sina\weibo\sdk\net\openapi\package-tree.html
+* doc\com\sina\weibo\sdk\net\openapi\package-use.html
+* doc\com\sina\weibo\sdk\net\package-frame.html
+* doc\com\sina\weibo\sdk\net\package-summary.html
+* doc\com\sina\weibo\sdk\net\package-tree.html
+* doc\com\sina\weibo\sdk\net\package-use.html
+* doc\com\sina\weibo\sdk\openapi\
+* doc\com\sina\weibo\sdk\openapi\AbsOpenAPI.html
+* doc\com\sina\weibo\sdk\openapi\CommentsAPI.html
+* doc\com\sina\weibo\sdk\openapi\InviteAPI.html
+* doc\com\sina\weibo\sdk\openapi\LogoutAPI.html
+* doc\com\sina\weibo\sdk\openapi\StatusesAPI.html
+* doc\com\sina\weibo\sdk\openapi\UsersAPI.html
+* doc\com\sina\weibo\sdk\openapi\class-use\
+* doc\com\sina\weibo\sdk\openapi\class-use\AbsOpenAPI.html
+* doc\com\sina\weibo\sdk\openapi\class-use\CommentsAPI.html
+* doc\com\sina\weibo\sdk\openapi\class-use\InviteAPI.html
+* doc\com\sina\weibo\sdk\openapi\class-use\LogoutAPI.html
+* doc\com\sina\weibo\sdk\openapi\class-use\StatusesAPI.html
+* doc\com\sina\weibo\sdk\openapi\class-use\UsersAPI.html
+* doc\com\sina\weibo\sdk\openapi\models\
+* doc\com\sina\weibo\sdk\openapi\models\AbsDataObject.html
+* doc\com\sina\weibo\sdk\openapi\models\Comment.html
+* doc\com\sina\weibo\sdk\openapi\models\CommentList.html
+* doc\com\sina\weibo\sdk\openapi\models\Coordinate.html
+* doc\com\sina\weibo\sdk\openapi\models\ErrorInfo.html
+* doc\com\sina\weibo\sdk\openapi\models\Favorite.html
+* doc\com\sina\weibo\sdk\openapi\models\FavoriteList.html
+* doc\com\sina\weibo\sdk\openapi\models\Geo.html
+* doc\com\sina\weibo\sdk\openapi\models\GeoList.html
+* doc\com\sina\weibo\sdk\openapi\models\Group.html
+* doc\com\sina\weibo\sdk\openapi\models\GroupList.html
+* doc\com\sina\weibo\sdk\openapi\models\GroupTag.html
+* doc\com\sina\weibo\sdk\openapi\models\IParseable.html
+* doc\com\sina\weibo\sdk\openapi\models\MusicInfo.html
+* doc\com\sina\weibo\sdk\openapi\models\OffsetGeo.html
+* doc\com\sina\weibo\sdk\openapi\models\Poi.html
+* doc\com\sina\weibo\sdk\openapi\models\PoiList.html
+* doc\com\sina\weibo\sdk\openapi\models\Privacy.html
+* doc\com\sina\weibo\sdk\openapi\models\Remind.html
+* doc\com\sina\weibo\sdk\openapi\models\Status.html
+* doc\com\sina\weibo\sdk\openapi\models\StatusList.html
+* doc\com\sina\weibo\sdk\openapi\models\Tag.html
+* doc\com\sina\weibo\sdk\openapi\models\User.html
+* doc\com\sina\weibo\sdk\openapi\models\Visible.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\
+* doc\com\sina\weibo\sdk\openapi\models\class-use\AbsDataObject.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Comment.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\CommentList.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Coordinate.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\ErrorInfo.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Favorite.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\FavoriteList.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Geo.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\GeoList.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Group.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\GroupList.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\GroupTag.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\IParseable.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\MusicInfo.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\OffsetGeo.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Poi.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\PoiList.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Privacy.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Remind.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Status.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\StatusList.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Tag.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\User.html
+* doc\com\sina\weibo\sdk\openapi\models\class-use\Visible.html
+* doc\com\sina\weibo\sdk\openapi\models\package-frame.html
+* doc\com\sina\weibo\sdk\openapi\models\package-summary.html
+* doc\com\sina\weibo\sdk\openapi\models\package-tree.html
+* doc\com\sina\weibo\sdk\openapi\models\package-use.html
+* doc\com\sina\weibo\sdk\openapi\package-frame.html
+* doc\com\sina\weibo\sdk\openapi\package-summary.html
+* doc\com\sina\weibo\sdk\openapi\package-tree.html
+* doc\com\sina\weibo\sdk\openapi\package-use.html
+* doc\constant-values.html
+* doc\help-doc.html
+* doc\index.html
+* doc\overview-frame.html
+* doc\overview-summary.html
+* doc\overview-tree.html
+* doc\package-list
+* doc\resources\
+* doc\resources\inherit.gif
+* doc\serialized-form.html
+* doc\stylesheet.css
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => weiboSDK\src\main\AndroidManifest.xml
+* libs\weibosdkcore_release.jar => weiboSDK\libs\weibosdkcore_release.jar
+* lint.xml => weiboSDK\lint.xml
+* res\ => weiboSDK\src\main\res\
+* src\ => weiboSDK\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

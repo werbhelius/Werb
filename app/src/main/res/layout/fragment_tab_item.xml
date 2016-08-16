@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/border"
+    android:orientation="horizontal">
+
+    <com.wanbo.werb.widget.ClickCircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_user_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:civ_border_color="#fff"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AcFun"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user_create_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="AcFun"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_reply_comment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/comment_16px"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_weibo_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:text="123456sdsasxsaxxasxsaxsawawaswdddddddddddddddddddddddddddddddddddddddd"/>
+
+    </LinearLayout>
+</LinearLayout>
+

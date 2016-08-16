@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Splash-->
+    <color name="white">#FFFFFF</color>
+    <color name="splashBgColor">#f44336</color>
+
+    <!--RefreshLayout-->
+    <color name="refresh_progress_1">#536DFE</color>
+    <color name="refresh_progress_2">#f44336</color>
+    <color name="refresh_progress_3">#FF4081</color>
+
+    <!--WeiBo Content-->
+    <color name="black">#000000</color>
+    <color name="blue">#3F51B5</color>
+
+    <!--Emotion-->
+    <color name="transparent">#00000000</color>
+    <color name="bg_gray">#f2f2f2</color>
+</resources>

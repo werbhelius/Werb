@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_sina_weibo_sdk_login">登錄</string>
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">用微博登錄</string>
+    <string name="com_sina_weibo_sdk_logout">註銷</string>
+</resources>

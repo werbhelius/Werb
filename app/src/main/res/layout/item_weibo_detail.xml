@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.wanbo.werb.widget.ClickCircleImageView
+            android:id="@+id/iv_weibo_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_color="#fff"
+            app:civ_border_width="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_weibo_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/tv_weibo_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="UMR80" />
+
+            <TextView
+                android:id="@+id/tv_weibo_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"
+                tools:text="2分" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_weibo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        tools:text="123456sdsasxsaxxasxsaxsawawaswdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd" />
+
+    <include layout="@layout/item_weibo_home_list_img" />
+
+    <include layout="@layout/item_weibo_home_list_zhuanfa" />
+
+
+</LinearLayout>

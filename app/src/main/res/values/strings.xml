@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Werb</string>
+    <string name="please_login">微博账号登陆</string>
+    <string name="weibo_auth_canceled">取消授权</string>
+    <string name="weibo_auth_exception">新浪服务器开小差啦~</string>
+    <string name="weibo_auth_success">授权成功</string>
+    <string name="weibo_token_to_string_format_1">Token：%1$s \\\\n有效期：%2$s</string>
+    <string name="weibo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="search">Search</string>
+    <string name="notification">notification</string>
+    <string name="left_list_home">全部微博</string>
+    <string name="left_list_hot">热门微博</string>
+    <string name="left_list_find">发现新大陆</string>
+    <string name="left_list_nearBy">周边</string>
+    <string name="left_list_aboutMe">关于我</string>
+    <string name="left_list_settings">设置</string>
+    <string name="time_out">连接超时了哦~</string>
+    <string name="load_error">网找不见了~</string>
+    <string name="up_refresh">up_refresh</string>
+    <string name="not_null">不能输入为空哦~</string>
+    <string name="comment_succe">操作成功~</string>
+    <string name="send">send</string>
+</resources>

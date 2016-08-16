@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_sina_weibo_sdk_login">Login</string>
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">Login with Weibo</string>
+    <string name="com_sina_weibo_sdk_logout">Logout</string>
+</resources>
