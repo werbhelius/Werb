@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,6 +59,16 @@ public class UserActivity extends MVPBaseActivity<IUserView,UserPresenter> imple
         finish();
     }
 
+    @Bind(R.id.tv_photo) TextView tv_photo;
+    @OnClick(R.id.tv_photo) void startPhoto(){
+        startActivity(FavoritesAndPhotoActivity.newIntent(this,"photo",user));
+    }
+
+    @Bind(R.id.tv_favorites) TextView tv_favorites;
+    @OnClick(R.id.tv_favorites) void startFavorites(){
+        startActivity(FavoritesAndPhotoActivity.newIntent(this,"favorites",user));
+    }
+
     private LinearLayoutManager mLayoutManager;
 
     @Override
@@ -98,6 +109,8 @@ public class UserActivity extends MVPBaseActivity<IUserView,UserPresenter> imple
             mPresenter.scrollRecycleView(this.user.getIdstr());
         }else {
             Toast.makeText(this,"由于接口限制，无法获取未授权用户信息",Toast.LENGTH_SHORT).show();
+            tv_favorites.setVisibility(View.GONE);
+            tv_photo.setVisibility(View.GONE);
         }
     }
 

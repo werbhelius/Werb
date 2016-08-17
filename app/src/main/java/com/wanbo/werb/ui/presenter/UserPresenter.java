@@ -131,6 +131,8 @@ public class UserPresenter extends BasePresenter<IUserView> {
         });
     }
 
+
+
     private Oauth2AccessToken readToken(Context context) {
         return AccessTokenKeeper.readAccessToken(context);
     }

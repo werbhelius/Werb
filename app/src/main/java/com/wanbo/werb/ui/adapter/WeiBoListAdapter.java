@@ -15,8 +15,11 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.wanbo.werb.R;
 import com.wanbo.werb.bean.Comments;
+import com.wanbo.werb.bean.Favorite;
+import com.wanbo.werb.bean.Photo;
 import com.wanbo.werb.bean.Status;
 import com.wanbo.werb.bean.User;
 import com.wanbo.werb.ui.activity.CommentAndRepostActivity;
@@ -84,6 +87,10 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                     View view = View.inflate(parent.getContext(), R.layout.item_weibo_home_list, null);
                     return new WeiBoListViewHolder(view);
                 }
+                case "favorites": {
+                    View view = View.inflate(parent.getContext(), R.layout.item_weibo_home_list, null);
+                    return new WeiBoListViewHolder(view);
+                }
                 case "tab_fg": {
                     View view = View.inflate(parent.getContext(), R.layout.fragment_tab_item, null);
                     return new WeiBoTabViewHolder(view);
@@ -95,6 +102,10 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 case "friend_ship": {
                     View view = View.inflate(parent.getContext(), R.layout.item_friends_ship, null);
                     return new FriendShipsViewHolder(view);
+                }
+                case "user_photo": {
+                    View view = View.inflate(parent.getContext(), R.layout.item_photo, null);
+                    return new UserPhotoViewHolder(view);
                 }
             }
         }
@@ -112,6 +123,11 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                     WeiBoListViewHolder weiBoListViewHolder = (WeiBoListViewHolder) holder;
                     weiBoListViewHolder.bindItem(context, (Status) list.get(position));
                     break;
+                case "favorites":
+                    Favorite favorite = (Favorite) list.get(position);
+                    WeiBoListViewHolder weiBoListHolder = (WeiBoListViewHolder) holder;
+                    weiBoListHolder.bindItem(context,favorite.getStatus());
+                    break;
                 case "tab_fg":
                     WeiBoTabViewHolder weiBoTabViewHolder = (WeiBoTabViewHolder) holder;
                     weiBoTabViewHolder.bindItem(context, (Comments) list.get(position));
@@ -123,6 +139,9 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 case "friend_ship":
                     FriendShipsViewHolder friendShipsViewHolder = (FriendShipsViewHolder) holder;
                     friendShipsViewHolder.bindItem((User) list.get(position));
+                case "user_photo":
+                    UserPhotoViewHolder userPhotoViewHolder = (UserPhotoViewHolder) holder;
+                    userPhotoViewHolder.bindItem((Photo) list.get(position));
                     break;
             }
         }
@@ -232,6 +251,11 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         }
 
         public void bindItem(Context context, Status status) {
+            if(status.getText().contains("抱歉，此微博已被删除")){
+                layout_weibo_zhuanfa.setVisibility(View.GONE);
+                tv_weibo_text.setText(StringUtil.getWeiBoText(context,status.getText()));
+                return;
+            }
             tv_weibo_userName.setText(status.getUser().getScreen_name());
             tv_weibo_source.setText(StringUtil.getWeiboSource(status.getSource()));
             tv_weibo_create_time.setText(DataUtil.showTime(status.getCreated_at()));
@@ -452,6 +476,30 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             tv_friend_userName.setText(user.getScreen_name());
             tv_friend_desc.setText(user.getDescription());
             iv_friend_icon.setUserImage(user);
+        }
+    }
+
+    /**
+     * User 界面相册界面
+     */
+    class UserPhotoViewHolder extends RecyclerView.ViewHolder{
+
+        @Bind(R.id.iv_photo)
+        ImageView iv_photo;
+        @Bind(R.id.layout_photo)
+        LinearLayout layout_photo;
+
+        public UserPhotoViewHolder(View itemView) {
+            super(itemView);
+            ButterKnife.bind(this,itemView);
+
+            ScreenUtil screenUtil = ScreenUtil.instance(context);
+            layout_photo.setLayoutParams(new LinearLayout.LayoutParams(screenUtil.getScreenWidth()/3,screenUtil.getScreenWidth()/3));
+            iv_photo.setLayoutParams(new LinearLayout.LayoutParams(screenUtil.getScreenWidth()/3,screenUtil.getScreenWidth()/3));
+        }
+
+        public void bindItem(Photo photo){
+            Glide.with(context).load(photo.getPic_url()).centerCrop().into(iv_photo);
         }
     }
 

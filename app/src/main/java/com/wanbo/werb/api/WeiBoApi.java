@@ -1,6 +1,7 @@
 package com.wanbo.werb.api;
 
 import com.wanbo.werb.bean.CommentsTimeLine;
+import com.wanbo.werb.bean.Favorites;
 import com.wanbo.werb.bean.FriendShips;
 import com.wanbo.werb.bean.FriendsTimeLine;
 import com.wanbo.werb.bean.MentionComment;
@@ -57,6 +58,9 @@ public interface WeiBoApi {
 
     @GET("friendships/friends/bilateral.json")
     Observable<FriendShips> getBilateralById(@QueryMap Map<String,Object> params);
+
+    @GET("favorites.json")
+    Observable<Favorites> getFavorites(@QueryMap Map<String,Object> params);
 
     @GET("statuses/user_timeline.json")
     Observable<FriendsTimeLine> getUserWeiBoTimeLine(@QueryMap Map<String,Object> params);
