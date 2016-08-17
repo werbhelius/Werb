@@ -69,6 +69,15 @@ public class ViewPagerFgAdapter extends FragmentPagerAdapter {
                 case 3:
                     return "发出的评论";
             }
+        } else if (tag.equals("FriendShips")){
+            switch (position) {
+                case 0:
+                    return "关注";
+                case 1:
+                    return "粉丝";
+                case 2:
+                    return "互粉";
+            }
         }
         return null;
     }

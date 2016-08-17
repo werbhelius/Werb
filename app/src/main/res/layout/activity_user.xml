@@ -26,6 +26,42 @@
             android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="@drawable/border_right"
+                    android:textColor="@color/dark_blue"
+                    android:text="全部微博"/>
+                <TextView
+                    android:id="@+id/tv_photo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/blue"
+                    android:background="@drawable/border_right"
+                    android:text="相册"/>
+                <TextView
+                    android:id="@+id/tv_favorites"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="@color/blue"
+                    android:background="@drawable/border_right"
+                    android:text="收藏"/>
+            </LinearLayout>
+
             <android.support.v4.widget.SwipeRefreshLayout
                 android:id="@+id/swipe_refresh"
                 android:layout_width="match_parent"

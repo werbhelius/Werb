@@ -100,14 +100,14 @@ public class MessageFgPresenter extends BasePresenter<IMessageFgView> {
     }
 
     // 发出的评论
-    public void getMessagesendComment() {
+    public void getMessageSendComment() {
         messageFgView = getView();
         if (messageFgView != null) {
             recyclerView = messageFgView.getRecyclerView();
             layoutManager = messageFgView.getLayoutManager();
             tag = messageFgView.getFgTag();
             Oauth2AccessToken token = readToken(context);
-            weiBoApi.getMessagesendComment(getAtCommentMap(token.getToken()))
+            weiBoApi.getMessageSendComment(getAtCommentMap(token.getToken()))
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(mentionComment -> {
@@ -134,7 +134,6 @@ public class MessageFgPresenter extends BasePresenter<IMessageFgView> {
 
     // get request params
     String max_id;
-
     private Map<String, Object> getAtCommentMap(String token) {
 
         switch (tag) {
@@ -237,7 +236,7 @@ public class MessageFgPresenter extends BasePresenter<IMessageFgView> {
                                     getMessageGetComment();
                                     break;
                                 case "send_comment":
-                                    getMessagesendComment();
+                                    getMessageSendComment();
                                     break;
                             }
                         }, 1000);

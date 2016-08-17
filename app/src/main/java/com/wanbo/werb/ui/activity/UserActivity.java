@@ -11,11 +11,14 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.wanbo.werb.BuildConfig;
+import com.wanbo.werb.MyApp;
 import com.wanbo.werb.R;
 import com.wanbo.werb.bean.User;
 import com.wanbo.werb.ui.base.MVPBaseActivity;
 import com.wanbo.werb.ui.presenter.UserPresenter;
 import com.wanbo.werb.ui.view.IUserView;
+
+import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -87,10 +90,12 @@ public class UserActivity extends MVPBaseActivity<IUserView,UserPresenter> imple
             System.out.println("user_id:"+user.getIdstr());
         }
 
-        if(user.getIdstr().equals("1771363374")) {
+        //获取授权用户信息
+        User userOAuth = getUserInfoFromDB();
+        if(user.getIdstr().equals(userOAuth.getIdstr())) {
             setDataRefresh(true);
-            mPresenter.getUserWeiBoTimeLine(user.getIdstr());
-            mPresenter.scrollRecycleView(user.getIdstr());
+            mPresenter.getUserWeiBoTimeLine(this.user.getIdstr());
+            mPresenter.scrollRecycleView(this.user.getIdstr());
         }else {
             Toast.makeText(this,"由于接口限制，无法获取未授权用户信息",Toast.LENGTH_SHORT).show();
         }
@@ -107,6 +112,9 @@ public class UserActivity extends MVPBaseActivity<IUserView,UserPresenter> imple
 
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
+
+        tv_user_flowers_count.setOnClickListener(v -> startActivity(FriendShipsActivity.newIntent(UserActivity.this,"followers",user.getIdstr())));
+        tv_user_friends_count.setOnClickListener(v -> startActivity(FriendShipsActivity.newIntent(UserActivity.this,"friends",user.getIdstr())));
     }
 
     @Override
@@ -134,5 +142,14 @@ public class UserActivity extends MVPBaseActivity<IUserView,UserPresenter> imple
     @Override
     public LinearLayoutManager getLayoutManager() {
         return mLayoutManager;
+    }
+
+    private User getUserInfoFromDB() {
+        ArrayList<User> query = MyApp.mDb.query(User.class);
+        if (query.size() > 0) {
+            return query.get(0);
+        } else {
+            return null;
+        }
     }
 }

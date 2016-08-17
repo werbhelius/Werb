@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.wanbo.werb.R;
 import com.wanbo.werb.bean.Comments;
 import com.wanbo.werb.bean.Status;
+import com.wanbo.werb.bean.User;
 import com.wanbo.werb.ui.activity.CommentAndRepostActivity;
 import com.wanbo.werb.ui.activity.WeiBoDetailActivity;
 import com.wanbo.werb.util.DataUtil;
@@ -78,15 +79,23 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             View view = View.inflate(parent.getContext(), R.layout.item_footer, null);
             return new FooterViewHolder(view);
         } else {
-            if(tag.equals("home_fg")) {
-                View view = View.inflate(parent.getContext(), R.layout.item_weibo_home_list, null);
-                return new WeiBoListViewHolder(view);
-            }else if(tag.equals("tab_fg")){
-                View view = View.inflate(parent.getContext(),R.layout.fragment_tab_item,null);
-                return new WeiBoTabViewHolder(view);
-            }else if(tag.equals("message_at_comment")){
-                View view = View.inflate(parent.getContext(),R.layout.item_message_at_comment,null);
-                return new MessageAtCommentViewHolder(view);
+            switch (tag) {
+                case "home_fg": {
+                    View view = View.inflate(parent.getContext(), R.layout.item_weibo_home_list, null);
+                    return new WeiBoListViewHolder(view);
+                }
+                case "tab_fg": {
+                    View view = View.inflate(parent.getContext(), R.layout.fragment_tab_item, null);
+                    return new WeiBoTabViewHolder(view);
+                }
+                case "message_at_comment": {
+                    View view = View.inflate(parent.getContext(), R.layout.item_message_at_comment, null);
+                    return new MessageAtCommentViewHolder(view);
+                }
+                case "friend_ship": {
+                    View view = View.inflate(parent.getContext(), R.layout.item_friends_ship, null);
+                    return new FriendShipsViewHolder(view);
+                }
             }
         }
         return null;
@@ -98,15 +107,23 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             FooterViewHolder footerViewHolder = (FooterViewHolder) holder;
             footerViewHolder.bindItem();
         } else {
-            if(tag.equals("home_fg")) {
-                WeiBoListViewHolder weiBoListViewHolder = (WeiBoListViewHolder) holder;
-                weiBoListViewHolder.bindItem(context, (Status) list.get(position));
-            }else if(tag.equals("tab_fg")){
-                WeiBoTabViewHolder weiBoTabViewHolder = (WeiBoTabViewHolder) holder;
-                weiBoTabViewHolder.bindItem(context, (Comments) list.get(position));
-            }else if(tag.equals("message_at_comment")){
-                MessageAtCommentViewHolder atCommentViewHolder = (MessageAtCommentViewHolder) holder;
-                atCommentViewHolder.bindItem((Comments) list.get(position));
+            switch (tag) {
+                case "home_fg":
+                    WeiBoListViewHolder weiBoListViewHolder = (WeiBoListViewHolder) holder;
+                    weiBoListViewHolder.bindItem(context, (Status) list.get(position));
+                    break;
+                case "tab_fg":
+                    WeiBoTabViewHolder weiBoTabViewHolder = (WeiBoTabViewHolder) holder;
+                    weiBoTabViewHolder.bindItem(context, (Comments) list.get(position));
+                    break;
+                case "message_at_comment":
+                    MessageAtCommentViewHolder atCommentViewHolder = (MessageAtCommentViewHolder) holder;
+                    atCommentViewHolder.bindItem((Comments) list.get(position));
+                    break;
+                case "friend_ship":
+                    FriendShipsViewHolder friendShipsViewHolder = (FriendShipsViewHolder) holder;
+                    friendShipsViewHolder.bindItem((User) list.get(position));
+                    break;
             }
         }
     }
@@ -369,6 +386,9 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         }
     }
 
+    /**
+     * 微博消息列表
+     */
     class MessageAtCommentViewHolder extends RecyclerView.ViewHolder{
 
         @Bind(R.id.iv_at_comment_icon)
@@ -404,6 +424,34 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             reply_at_comment.setOnClickListener(v -> {
                 context.startActivity(CommentAndRepostActivity.newIntent(context,comments.getStatus(),"回复评论",comments));
             });
+        }
+    }
+
+
+    /**
+     * 微博好友列表
+     */
+    class FriendShipsViewHolder extends RecyclerView.ViewHolder{
+
+        @Bind(R.id.iv_friend_icon)
+        ClickCircleImageView iv_friend_icon;
+        @Bind(R.id.tv_friend_userName)
+        TextView tv_friend_userName;
+        @Bind(R.id.tv_friend_desc)
+        TextView tv_friend_desc;
+
+        public FriendShipsViewHolder(View itemView) {
+            super(itemView);
+            ButterKnife.bind(this, itemView);
+
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            itemView.setLayoutParams(params);
+        }
+
+        public void bindItem(User user){
+            tv_friend_userName.setText(user.getScreen_name());
+            tv_friend_desc.setText(user.getDescription());
+            iv_friend_icon.setUserImage(user);
         }
     }
 

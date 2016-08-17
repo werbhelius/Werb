@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/border">
+
+    <com.wanbo.werb.widget.ClickCircleImageView
+        android:id="@+id/iv_friend_icon"
+        app:civ_border_color="#fff"
+        app:civ_border_width="1dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_friend_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="UMR80" />
+
+        <TextView
+            android:id="@+id/tv_friend_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:singleLine="true"
+            tools:text="123456sdsasxsaxxasxsaxsawawaswddddddddd"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -62,6 +62,10 @@
         <activity android:name=".ui.activity.MessageActivity"
             android:theme="@style/FullWindowTheme"/>
 
+        <!--FriendShipsActivity-->
+        <activity android:name=".ui.activity.FriendShipsActivity"
+            android:theme="@style/FullWindowTheme"/>
+
         <!--Browser by OAuth-->
         <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
             android:configChanges="keyboardHidden|orientation"

@@ -16,6 +16,7 @@
     <!--WeiBo Content-->
     <color name="black">#000000</color>
     <color name="blue">#3F51B5</color>
+    <color name="dark_blue">#303F9F</color>
 
     <!--Emotion-->
     <color name="transparent">#00000000</color>

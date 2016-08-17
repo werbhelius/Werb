@@ -8,48 +8,51 @@ import android.view.View;
 
 import com.wanbo.werb.R;
 import com.wanbo.werb.ui.base.MVPBaseFragment;
-import com.wanbo.werb.ui.presenter.MessageFgPresenter;
-import com.wanbo.werb.ui.view.IMessageFgView;
+import com.wanbo.werb.ui.presenter.FriendShipsFgPresenter;
+import com.wanbo.werb.ui.view.IFriendFgView;
 
 import butterknife.Bind;
 
 /**
- * Created by Werb on 2016/8/11.
+ * Created by Werb on 2016/8/17.
  * Werb is Wanbo.
  * Contact Me : werbhelius@gmail.com
- * MessageFragment
+ * PS:由于权限原因所以未能获取全部数据
  */
-public class MessageFragment extends MVPBaseFragment<IMessageFgView,MessageFgPresenter> implements IMessageFgView {
+public class FriendShipFragment extends MVPBaseFragment<IFriendFgView, FriendShipsFgPresenter> implements IFriendFgView {
 
     private static final String TAG = "tag";
-
+    private static final String UID = "uid";
     private String tag;
+    private String uid;
 
     private LinearLayoutManager mLayoutManager;
-    @Bind(R.id.message_list)
-    RecyclerView message_list;
+    @Bind(R.id.friend_list)
+    RecyclerView friend_list;
 
     @Override
-    protected MessageFgPresenter createPresenter() {
-        return new MessageFgPresenter(getContext());
+    protected FriendShipsFgPresenter createPresenter() {
+        return new FriendShipsFgPresenter(getContext());
     }
 
     @Override
     protected int createViewLayoutId() {
-            return R.layout.fragment_message;
+        return R.layout.fragment_friend_ship;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         tag = getArguments().getString(TAG);
+        uid = getArguments().getString(UID);
     }
 
-    public static MessageFragment newInstance(String tag) {
+    public static FriendShipFragment newInstance(String tag, String uid) {
         //通过Bundle保存数据
         Bundle args = new Bundle();
-        args.putString(MessageFragment.TAG, tag);
-        MessageFragment fragment = new MessageFragment();
+        args.putString(FriendShipFragment.TAG, tag);
+        args.putString(FriendShipFragment.UID, uid);
+        FriendShipFragment fragment = new FriendShipFragment();
         //将Bundle设置为fragment的参数
         fragment.setArguments(args);
         return fragment;
@@ -58,57 +61,49 @@ public class MessageFragment extends MVPBaseFragment<IMessageFgView,MessageFgPre
     @Override
     protected void initView(View rootView) {
         mLayoutManager = new LinearLayoutManager(getContext());
-        message_list.setLayoutManager(mLayoutManager);
+        friend_list.setLayoutManager(mLayoutManager);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         switch (tag) {
-            case "at_weibo":
+            case "friends":
                 setDataRefresh(true);
-                mPresenter.getMessageAtWeibo();
+                mPresenter.getFriendById(uid);
+                mPresenter.scrollRecycleView(uid);
                 break;
-            case "at_comment":
+            case "followers":
                 setDataRefresh(true);
-                mPresenter.getMentionComment();
-                mPresenter.scrollRecycleView();
+                mPresenter.getFollowerById(uid);
+                mPresenter.scrollRecycleView(uid);
                 break;
-            case "get_comment":
+            case "bilateral":
                 setDataRefresh(true);
-                mPresenter.getMessageGetComment();
-                mPresenter.scrollRecycleView();
-                break;
-            case "send_comment":
-                setDataRefresh(true);
-                mPresenter.getMessageSendComment();
-                mPresenter.scrollRecycleView();
+                mPresenter.getBilateralById(uid);
+                mPresenter.scrollRecycleView(uid);
                 break;
         }
     }
-
     @Override
     public void requestDataRefresh() {
         super.requestDataRefresh();
         switch (tag) {
-            case "at_weibo":
+            case "friends":
                 setDataRefresh(true);
-                mPresenter.getMessageAtWeibo();
+                mPresenter.getFriendById(uid);
                 break;
-            case "at_comment":
+            case "followers":
                 setDataRefresh(true);
-                mPresenter.getMentionComment();
+                mPresenter.getFollowerById(uid);
                 break;
-            case "get_comment":
+            case "bilateral":
                 setDataRefresh(true);
-                mPresenter.getMessageGetComment();
-                break;
-            case "send_comment":
-                setDataRefresh(true);
-                mPresenter.getMessageSendComment();
+                mPresenter.getBilateralById(uid);
                 break;
         }
     }
+
 
     @Override
     public void setDataRefresh(Boolean refresh) {
@@ -117,7 +112,7 @@ public class MessageFragment extends MVPBaseFragment<IMessageFgView,MessageFgPre
 
     @Override
     public RecyclerView getRecyclerView() {
-        return message_list;
+        return friend_list;
     }
 
     @Override
