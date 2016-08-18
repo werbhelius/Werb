@@ -101,7 +101,6 @@ public class FAPPresenter extends BasePresenter<IFAPView> {
         Map<String, Object> map = new HashMap<>();
         map.put("access_token", token);
         map.put("uid", uid);
-        map.put("count", "20");
         if (isLoadMore) {
             map.put("max_id", Long.valueOf(max_id));
         }

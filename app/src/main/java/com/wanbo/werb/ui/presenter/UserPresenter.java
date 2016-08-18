@@ -89,7 +89,15 @@ public class UserPresenter extends BasePresenter<IUserView> {
                 adapter.updateLoadStatus(adapter.LOAD_NONE);
                 return;
             }
-            list.addAll(statuses.subList(1,statuses.size()-1));
+            if (statuses.size() == 0 ){
+                adapter.updateLoadStatus(adapter.LOAD_NONE);
+                userView.setDataRefresh(false);
+                return;
+            }else if(statuses.size()==1){
+                list.addAll(statuses);
+            } else{
+                list.addAll(statuses.subList(1,statuses.size()-1));
+            }
             adapter.notifyDataSetChanged();
         } else {
             list = friendsTimeLine.getStatuses();

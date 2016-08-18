@@ -17,6 +17,7 @@ import butterknife.Bind;
  * Created by Werb on 2016/8/2.
  * Werb is Wanbo.
  * Contact Me : werbhelius@gmail.com
+ * 由于接口限制，只能获取评论数据，转发与点赞数据原理相同，设置对应Tag不同请求就可以
  */
 public class TabFragment extends MVPBaseFragment<ITabView,TabPresenter> implements ITabView {
 

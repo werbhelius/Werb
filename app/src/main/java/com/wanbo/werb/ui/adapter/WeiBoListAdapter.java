@@ -139,6 +139,7 @@ public class WeiBoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 case "friend_ship":
                     FriendShipsViewHolder friendShipsViewHolder = (FriendShipsViewHolder) holder;
                     friendShipsViewHolder.bindItem((User) list.get(position));
+                    break;
                 case "user_photo":
                     UserPhotoViewHolder userPhotoViewHolder = (UserPhotoViewHolder) holder;
                     userPhotoViewHolder.bindItem((Photo) list.get(position));

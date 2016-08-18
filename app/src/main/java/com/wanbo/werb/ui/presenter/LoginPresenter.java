@@ -38,12 +38,14 @@ public class LoginPresenter extends BasePresenter<ILoginView> {
         mSsoHandler = new SsoHandler(activity, mAuthInfo);
     }
 
+    //回调
     public void ssoCallBack(int requestCode, int resultCode, Intent data){
         if (mSsoHandler != null) {
             mSsoHandler.authorizeCallBack(requestCode, resultCode, data);
         }
     }
 
+    //登陆
     public void login(){
         mSsoHandler.authorize(new WeiboAuthListener() {
             @Override
