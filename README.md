@@ -62,7 +62,7 @@
 ### 闲聊一下
 * 这个项目我会继续做的，但由于接口的限制，进度应该会很缓慢，有好想法的同学可以联系我，我们来一起做
 * 想学习 MVP + RexJava + Retrofit 的同学，可以看一下我的这个项目
-* [实践！业余时间做的一款阅读类App （MVP + RexJava + Retrofit）]()
+* [实践！业余时间做的一款阅读类App （MVP + RexJava + Retrofit）](http://werb.github.io/2016/09/11/%E5%AE%9E%E8%B7%B5%EF%BC%81%E4%B8%9A%E4%BD%99%E6%97%B6%E9%97%B4%E5%81%9A%E7%9A%84%E4%B8%80%E6%AC%BE%E9%98%85%E8%AF%BB%E7%B1%BBApp-%EF%BC%88MVP-RexJava-Retrofit%EF%BC%89/)
 * Github 地址在这里 : [https://github.com/Werb/GankWithZhihu](https://github.com/Werb/GankWithZhihu)
 * 单纯的使用 MVP + RexJava + Retrofit 构建一个项目，没有其他复杂的功能，很适合学习
 * 欢迎 Star 和 Fork
