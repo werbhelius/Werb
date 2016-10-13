@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\build\\intermediates\\res\\merged\\release\\values-zh-rTW\\values-zh-rTW.xml",
+        "outputFile": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/build/intermediates/res/merged/release/values-zh-rTW/values-zh-rTW.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values-zh-rTW\\strings.xml",
+                    "file": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/src/main/res/values-zh-rTW/strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values-zh-rTW\\strings.xml",
+                    "file": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/src/main/res/values-zh-rTW/strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 241
                 },
                 "from": {
-                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values-zh-rTW\\strings.xml",
+                    "file": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/src/main/res/values-zh-rTW/strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,

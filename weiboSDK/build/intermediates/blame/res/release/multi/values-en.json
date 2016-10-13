@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\build\\intermediates\\res\\merged\\release\\values-en\\values-en.xml",
+        "outputFile": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/build/intermediates/res/merged/release/values-en/values-en.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 109
                 },
                 "from": {
-                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values-en\\strings.xml",
+                    "file": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 198
                 },
                 "from": {
-                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values-en\\strings.xml",
+                    "file": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 259
                 },
                 "from": {
-                    "file": "D:\\CodeTools\\Android\\android_stdio_workspace\\Werb\\weiboSDK\\src\\main\\res\\values-en\\strings.xml",
+                    "file": "/Users/admin/Wanbo/code/workspace/me/Werb/weiboSDK/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
